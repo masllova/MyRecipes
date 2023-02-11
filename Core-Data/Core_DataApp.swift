@@ -15,6 +15,7 @@ struct Core_DataApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .preferredColorScheme(ColorScheme.light)
         }
     }
 }

@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333FE31F29964CA50049C140 /* InCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333FE31E29964CA50049C140 /* InCard.swift */; };
+		333FE32129964DCA0049C140 /* RecipeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333FE32029964DCA0049C140 /* RecipeForm.swift */; };
+		33641028299674CC0040098C /* ProductCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33641027299674CC0040098C /* ProductCalculator.swift */; };
 		33D8976829962F6400CA6E7E /* Core_DataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D8976729962F6400CA6E7E /* Core_DataApp.swift */; };
 		33D8976A29962F6400CA6E7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D8976929962F6400CA6E7E /* ContentView.swift */; };
 		33D8976C29962F6500CA6E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D8976B29962F6500CA6E7E /* Assets.xcassets */; };
 		33D8976F29962F6500CA6E7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D8976E29962F6500CA6E7E /* Preview Assets.xcassets */; };
 		33D8977129962F6500CA6E7E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D8977029962F6500CA6E7E /* Persistence.swift */; };
 		33D8977429962F6500CA6E7E /* Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33D8977229962F6500CA6E7E /* Core_Data.xcdatamodeld */; };
+		33D8977C2996315600CA6E7E /* Saving+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D8977A2996315600CA6E7E /* Saving+CoreDataClass.swift */; };
+		33D8977D2996315600CA6E7E /* Saving+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D8977B2996315600CA6E7E /* Saving+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		333FE31E29964CA50049C140 /* InCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCard.swift; sourceTree = "<group>"; };
+		333FE32029964DCA0049C140 /* RecipeForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeForm.swift; sourceTree = "<group>"; };
+		33641027299674CC0040098C /* ProductCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCalculator.swift; sourceTree = "<group>"; };
+		339F76B92997FF9700EBB11D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		33D8976429962F6400CA6E7E /* Core-Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core-Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D8976729962F6400CA6E7E /* Core_DataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_DataApp.swift; sourceTree = "<group>"; };
 		33D8976929962F6400CA6E7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +32,8 @@
 		33D8976E29962F6500CA6E7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		33D8977029962F6500CA6E7E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		33D8977329962F6500CA6E7E /* Core_Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data.xcdatamodel; sourceTree = "<group>"; };
+		33D8977A2996315600CA6E7E /* Saving+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Saving+CoreDataClass.swift"; path = "Core-Data/CDFiles/Saving+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		33D8977B2996315600CA6E7E /* Saving+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Saving+CoreDataProperties.swift"; path = "Core-Data/CDFiles/Saving+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		333FE31D29964C550049C140 /* CDFiles */ = {
+			isa = PBXGroup;
+			children = (
+				33D8977029962F6500CA6E7E /* Persistence.swift */,
+				33D8977A2996315600CA6E7E /* Saving+CoreDataClass.swift */,
+				33D8977B2996315600CA6E7E /* Saving+CoreDataProperties.swift */,
+				33D8977229962F6500CA6E7E /* Core_Data.xcdatamodeld */,
+			);
+			path = CDFiles;
+			sourceTree = "<group>";
+		};
 		33D8975B29962F6400CA6E7E = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +77,14 @@
 		33D8976629962F6400CA6E7E /* Core-Data */ = {
 			isa = PBXGroup;
 			children = (
+				339F76B92997FF9700EBB11D /* Info.plist */,
 				33D8976729962F6400CA6E7E /* Core_DataApp.swift */,
 				33D8976929962F6400CA6E7E /* ContentView.swift */,
+				33641027299674CC0040098C /* ProductCalculator.swift */,
+				333FE32029964DCA0049C140 /* RecipeForm.swift */,
+				333FE31E29964CA50049C140 /* InCard.swift */,
+				333FE31D29964C550049C140 /* CDFiles */,
 				33D8976B29962F6500CA6E7E /* Assets.xcassets */,
-				33D8977029962F6500CA6E7E /* Persistence.swift */,
-				33D8977229962F6500CA6E7E /* Core_Data.xcdatamodeld */,
 				33D8976D29962F6500CA6E7E /* Preview Content */,
 			);
 			path = "Core-Data";
@@ -143,10 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333FE31F29964CA50049C140 /* InCard.swift in Sources */,
 				33D8977429962F6500CA6E7E /* Core_Data.xcdatamodeld in Sources */,
+				33641028299674CC0040098C /* ProductCalculator.swift in Sources */,
 				33D8977129962F6500CA6E7E /* Persistence.swift in Sources */,
 				33D8976A29962F6400CA6E7E /* ContentView.swift in Sources */,
 				33D8976829962F6400CA6E7E /* Core_DataApp.swift in Sources */,
+				33D8977C2996315600CA6E7E /* Saving+CoreDataClass.swift in Sources */,
+				33D8977D2996315600CA6E7E /* Saving+CoreDataProperties.swift in Sources */,
+				333FE32129964DCA0049C140 /* RecipeForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,25 +300,28 @@
 		33D8977829962F6500CA6E7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Core-Data/Preview Content\"";
 				DEVELOPMENT_TEAM = C9GRWZY5P5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Core-Data/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MyRecipes;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexa.Core-Data";
+				PRODUCT_BUNDLE_IDENTIFIER = "Alexandra.Core-Data";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -299,25 +332,28 @@
 		33D8977929962F6500CA6E7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Core-Data/Preview Content\"";
 				DEVELOPMENT_TEAM = C9GRWZY5P5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Core-Data/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MyRecipes;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexa.Core-Data";
+				PRODUCT_BUNDLE_IDENTIFIER = "Alexandra.Core-Data";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
