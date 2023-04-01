@@ -52,11 +52,14 @@ struct NewRecipeForm: View {
                         Button(action: {
                             self.show.toggle()
                         }) {
-                            Image(systemName: "photo")
+                            Image("nil")
                                 .resizable()
-                                .frame(width: 300, height: 150)
+                                .frame(width: 280, height: 150)
                                 .cornerRadius(20)
                                 .foregroundColor(.white)
+                                .background(RoundedRectangle(cornerRadius: 20)
+                                    .frame(width: 285, height: 155)
+                                    .foregroundColor(Color(MyColorG)))
                         }
                     }
                 }.listRowBackground(Color(MyColorW))

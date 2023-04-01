@@ -24,7 +24,7 @@ struct InCard: View {
             Color(MyColorW).ignoresSafeArea()
         VStack {
             VStack {
-                Image (uiImage: UIImage(data: inf.imageID ?? self.image)!)
+                Image(uiImage: (UIImage(data: inf.imageID ?? self.image) ?? UIImage(named: "nil"))!)
                     .resizable()
                     .aspectRatio(6/4, contentMode: .fit)
                     .border(Color(MyColorGD), width: 3)

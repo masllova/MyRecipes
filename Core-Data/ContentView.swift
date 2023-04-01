@@ -72,7 +72,7 @@ struct ContentView: View {
                             InCard(inf: save)
                         } label: {
                                 VStack {
-                                    Image(uiImage: UIImage(data: save.imageID ?? self.image)!)
+                                    Image(uiImage: (UIImage(data: save.imageID ?? self.image) ?? UIImage(named: "nil"))!)
                                         .resizable()
                                         .frame(width: .infinity, height: 150)
                                         .cornerRadius(10)

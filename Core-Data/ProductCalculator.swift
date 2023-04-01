@@ -105,7 +105,6 @@ of the product
             
         }
     }
-    
     func cupAmount () -> String {
         if product == "Milk" {return "250 ml"}
         if product == "Flour" {return "160 gr"}
